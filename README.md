@@ -21,6 +21,7 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 # Abasto:
 
 <h3 style="color:#800080;">Producción y fábrica especializada:</h3>
+
 - Instalación de una planta de chocolate con maquinaria experimental que respete los procesos artesanales.
 
 - Importación de cacao amazónico en grandes volúmenes, garantizando trazabilidad y sostenibilidad.* 
@@ -28,11 +29,13 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 - Contratación de personal con roles definidos: maestros chocolateros, técnicos de maquinaria, responsables de calidad, marketing digital, logística y atención al cliente.
 
 <h3 style="color:#800080;">Plataforma digital y catálogo online:</h3>
+
 - Creación de una página web oficial de la marca con catálogo de productos, historia de la empresa y tienda online.
 
 - Integración de sistemas de pago seguros y opciones de envío internacional.
 
 <h3 style="color:#800080;">Promoción y Marketing:</h3>
+
 - Estrategia de marketing digital basada en redes sociales, streams en directo mostrando el proceso de producción y campañas publicitarias.
 
 - Colaboraciones con influencers gastronómicos y chocolateros.
@@ -40,6 +43,7 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 - Participación en concursos internacionales y ferias de alimentación.
 
 <h3 style="color:#800080;">Fuentes de ingresos:</h3>
+
 - Ventas directas en el local original y en la tienda online.
 
 - Donaciones y monetización de streams en plataformas digitales.
@@ -49,6 +53,7 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 - Premios y reconocimientos en concursos internacionales.
 
 <h3 style="color:#800080;">Innovación y diferenciación:</h3>
+
 - Uso de maquinaria experimental que permita mantener la textura, sabor y calidad artesanal en un entorno de producción más amplio.
 
 - Transparencia en el proceso productivo, mostrando al público cómo se conserva la esencia natural del chocolate.
