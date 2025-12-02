@@ -1,4 +1,4 @@
-# kakaw-essence
+# Kakaw-Essence
 
 # Contexto:
 
@@ -20,7 +20,7 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 
 # Abasto:
 
-<h3 style="color:#800080;">Producción y fábrica especializada:</h3>
+<h3>Producción y fábrica especializada:</h3>
 
 - Instalación de una planta de chocolate con maquinaria experimental que respete los procesos artesanales.
 
@@ -28,13 +28,13 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 
 - Contratación de personal con roles definidos: maestros chocolateros, técnicos de maquinaria, responsables de calidad, marketing digital, logística y atención al cliente.
 
-<h3 style="color:#800080;">Plataforma digital y catálogo online:</h3>
+<h3>Plataforma digital y catálogo online:</h3>
 
 - Creación de una página web oficial de la marca con catálogo de productos, historia de la empresa y tienda online.
 
 - Integración de sistemas de pago seguros y opciones de envío internacional.
 
-<h3 style="color:#800080;">Promoción y Marketing:</h3>
+<h3>Promoción y Marketing:</h3>
 
 - Estrategia de marketing digital basada en redes sociales, streams en directo mostrando el proceso de producción y campañas publicitarias.
 
@@ -42,7 +42,7 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 
 - Participación en concursos internacionales y ferias de alimentación.
 
-<h3 style="color:#800080;">Fuentes de ingresos:</h3>
+<h3>Fuentes de ingresos:</h3>
 
 - Ventas directas en el local original y en la tienda online.
 
@@ -52,7 +52,7 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 
 - Premios y reconocimientos en concursos internacionales.
 
-<h3 style="color:#800080;">Innovación y diferenciación:</h3>
+<h3>Innovación y diferenciación:</h3>
 
 - Uso de maquinaria experimental que permita mantener la textura, sabor y calidad artesanal en un entorno de producción más amplio.
 
@@ -64,5 +64,45 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 
 Entonces mi trabajo en este proyecto sería hacer la web de la marca, con el catálogo de productos y más información, hacer el listado y presupuesto de las máquinas experimentales que necesitará la fábrica y el equipo de grabación necesario para los streams, el número de empleados con sus respectivos roles,etc.
 
+#Fases del Projecte:
+
+<h3>Fase 1: Infraestructura de la fábrica</h3>
+<h5>Duración estimada:</h5> 3–4 meses 
+<h5>Objetivo:</h5> Construir una planta de producción que respete los procesos artesanales y permita escalar la fabricación sin perder la esencia.
+<h5>Tareas principales:</h5>
+- Selección del terreno y diseño arquitectónico de la fábrica.
+- Instalación de maquinaria experimental que conserve la textura y sabor artesanal.
+- Implementación de sistemas de trazabilidad para el cacao amazónico.
+- Contratación de personal técnico y chocolatero especializado.
+- Diseño de espacios para grabación de contenido (streams, visitas guiadas).
+
+Fase 2: Infraestructura digital y tecnológica
+Duración estimada: 2–3 meses 
+Objetivo: Desarrollar toda la infraestructura digital que soporte la fábrica, la web y la estrategia de marketing internacional.
+Tareas principales:
+Dominio y hosting:
+Registro del dominio oficial ( kakaw-essence.cat) y configuración de DNS.
+Contratación de hosting escalable (preferiblemente cloud-native).
+Cloud y servidores:
+Implementación de servidores virtuales para la web, catálogo, CRM y sistema de pedidos.
+Configuración de backups automáticos y seguridad SSL.
+Web y catálogo:
+Desarrollo de la página web con catálogo de productos, historia, tienda online y sección de streaming.
+Integración de pasarelas de pago seguras y opciones de envío internacional.
+Equipos electrónicos para la fábrica:
+Listado y presupuesto de cámaras, micrófonos, pantallas, routers y sensores para grabación y monitoreo.
+Instalación de red interna para control de procesos y contenido en tiempo real.
+Software y automatización:
+Selección de programas para gestión de pedidos, inventario, marketing y atención al cliente.
+Automatización de tareas repetitivas y sincronización con redes sociales.
+Fase 3: Lanzamiento y promoción internacional
+Duración estimada: 1–2 meses 
+Objetivo: Posicionar la marca en el mercado global manteniendo su autenticidad y esencia artesanal.
+Tareas principales:
+Campañas de marketing digital en redes sociales con contenido en directo desde la fábrica.
+Colaboraciones con influencers gastronómicos y chocolateros.
+Participación en ferias internacionales y concursos de chocolate.
+Activación de la tienda online y estrategia de SEO internacional.
+Monitoreo de métricas de tráfico, ventas y engagement.
 
 
