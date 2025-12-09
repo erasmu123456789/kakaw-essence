@@ -64,23 +64,23 @@ Le daba igual tener que contratar más empleados, adquirir unas máquinas más e
 
 Entonces mi trabajo en este proyecto sería hacer la web de la marca, con el catálogo de productos y más información, hacer el listado y presupuesto de las máquinas experimentales que necesitará la fábrica y el equipo de grabación necesario para los streams, el número de empleados con sus respectivos roles,etc.
 
-#Fases del Projecte:
+# Fases del Projecte:
 
 <h3>Fase 1: Infraestructura de la fábrica</h3>
-<h5>Duración estimada:</h5> 3–4 meses 
-<h5>Objetivo:</h5> Construir una planta de producción que respete los procesos artesanales y permita escalar la fabricación sin perder la esencia.
-<h5>Tareas principales:</h5>
+<h4>Duración estimada:</h4> 3–4 meses 
+<h4>Objetivo:</h4> Construir una planta de producción que respete los procesos artesanales y permita escalar la fabricación sin perder la esencia.
+<h4>Tareas principales:</h4>
 - Selección del terreno y diseño arquitectónico de la fábrica.
 - Instalación de maquinaria experimental que conserve la textura y sabor artesanal.
 - Implementación de sistemas de trazabilidad para el cacao amazónico.
 - Contratación de personal técnico y chocolatero especializado.
 - Diseño de espacios para grabación de contenido (streams, visitas guiadas).
 
-Fase 2: Infraestructura digital y tecnológica
-Duración estimada: 2–3 meses 
-Objetivo: Desarrollar toda la infraestructura digital que soporte la fábrica, la web y la estrategia de marketing internacional.
-Tareas principales:
-Dominio y hosting:
+<h3>Fase 2: Infraestructura digital y tecnológica</h3>
+<h4>Duración estimada:</h4> 2–3 meses 
+<h4>Objetivo:</h4> Desarrollar toda la infraestructura digital que soporte la fábrica, la web y la estrategia de marketing internacional.
+<h4>Tareas principales:</h4>
+- Dominio y hosting:
 Registro del dominio oficial ( kakaw-essence.cat) y configuración de DNS.
 Contratación de hosting escalable (preferiblemente cloud-native).
 Cloud y servidores:
@@ -95,14 +95,14 @@ Instalación de red interna para control de procesos y contenido en tiempo real.
 Software y automatización:
 Selección de programas para gestión de pedidos, inventario, marketing y atención al cliente.
 Automatización de tareas repetitivas y sincronización con redes sociales.
-Fase 3: Lanzamiento y promoción internacional
-Duración estimada: 1–2 meses 
-Objetivo: Posicionar la marca en el mercado global manteniendo su autenticidad y esencia artesanal.
-Tareas principales:
-Campañas de marketing digital en redes sociales con contenido en directo desde la fábrica.
-Colaboraciones con influencers gastronómicos y chocolateros.
-Participación en ferias internacionales y concursos de chocolate.
-Activación de la tienda online y estrategia de SEO internacional.
-Monitoreo de métricas de tráfico, ventas y engagement.
+<h3>Fase 3: Lanzamiento y promoción internacional</h3>
+<h4>Duración estimada:</h4> 1–2 meses 
+<h4>Objetivo:</h4> Posicionar la marca en el mercado global manteniendo su autenticidad y esencia artesanal.
+<h4>Tareas principales:</h4>
+- Campañas de marketing digital en redes sociales con contenido en directo desde la fábrica.
+- Colaboraciones con influencers gastronómicos y chocolateros.
+- Participación en ferias internacionales y concursos de chocolate.
+- Activación de la tienda online y estrategia de SEO internacional.
+- Monitoreo de métricas de tráfico, ventas y engagement.
 
 
