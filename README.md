@@ -100,9 +100,13 @@ Automatización de tareas repetitivas y sincronización con redes sociales.
 <h4>Objetivo:</h4> Posicionar la marca en el mercado global manteniendo su autenticidad y esencia artesanal.
 <h4>Tareas principales:</h4>
 - Campañas de marketing digital en redes sociales con contenido en directo desde la fábrica.
+
 - Colaboraciones con influencers gastronómicos y chocolateros.
+
 - Participación en ferias internacionales y concursos de chocolate.
+
 - Activación de la tienda online y estrategia de SEO internacional.
+
 - Monitoreo de métricas de tráfico, ventas y engagement.
 
 
