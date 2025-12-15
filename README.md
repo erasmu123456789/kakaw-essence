@@ -71,9 +71,13 @@ Entonces mi trabajo en este proyecto sería hacer la web de la marca, con el cat
 <h4>Objetivo:</h4> Construir una planta de producción que respete los procesos artesanales y permita escalar la fabricación sin perder la esencia.
 <h4>Tareas principales:</h4>
 - Selección del terreno y diseño arquitectónico de la fábrica.
+
 - Instalación de maquinaria experimental que conserve la textura y sabor artesanal.
+
 - Implementación de sistemas de trazabilidad para el cacao amazónico.
+
 - Contratación de personal técnico y chocolatero especializado.
+
 - Diseño de espacios para grabación de contenido (streams, visitas guiadas).
 
 <h3>Fase 2: Infraestructura digital y tecnológica</h3>
@@ -81,20 +85,34 @@ Entonces mi trabajo en este proyecto sería hacer la web de la marca, con el cat
 <h4>Objetivo:</h4> Desarrollar toda la infraestructura digital que soporte la fábrica, la web y la estrategia de marketing internacional.
 <h4>Tareas principales:</h4>
 - Dominio y hosting:
-Registro del dominio oficial ( kakaw-essence.cat) y configuración de DNS.
-Contratación de hosting escalable (preferiblemente cloud-native).
-Cloud y servidores:
-Implementación de servidores virtuales para la web, catálogo, CRM y sistema de pedidos.
-Configuración de backups automáticos y seguridad SSL.
-Web y catálogo:
-Desarrollo de la página web con catálogo de productos, historia, tienda online y sección de streaming.
-Integración de pasarelas de pago seguras y opciones de envío internacional.
-Equipos electrónicos para la fábrica:
-Listado y presupuesto de cámaras, micrófonos, pantallas, routers y sensores para grabación y monitoreo.
-Instalación de red interna para control de procesos y contenido en tiempo real.
-Software y automatización:
-Selección de programas para gestión de pedidos, inventario, marketing y atención al cliente.
-Automatización de tareas repetitivas y sincronización con redes sociales.
+
+  - Registro del dominio oficial ( kakaw-essence.cat) y configuración de DNS.
+
+  - Contratación de hosting escalable (preferiblemente cloud-native).
+
+- Cloud y servidores:
+
+  - Implementación de servidores virtuales para la web, catálogo, CRM y sistema de pedidos.
+
+  - Configuración de backups automáticos y seguridad SSL.
+
+- Web y catálogo:
+
+  - Desarrollo de la página web con catálogo de productos, historia, tienda online y sección de streaming.
+
+  - Integración de pasarelas de pago seguras y opciones de envío internacional.
+
+- Equipos electrónicos para la fábrica:
+
+  - Listado y presupuesto de cámaras, micrófonos, pantallas, routers y sensores para grabación y monitoreo.
+
+  - Instalación de red interna para control de procesos y contenido en tiempo real.
+
+- Software y automatización:
+
+  - Selección de programas para gestión de pedidos, inventario, marketing y atención al cliente.
+
+  - Automatización de tareas repetitivas y sincronización con redes sociales.
 <h3>Fase 3: Lanzamiento y promoción internacional</h3>
 <h4>Duración estimada:</h4> 1–2 meses 
 <h4>Objetivo:</h4> Posicionar la marca en el mercado global manteniendo su autenticidad y esencia artesanal.
