@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kakaw-essence — Chocolatería Natural Artesanal</title>
+  <meta name="description" content="Kakaw-essence: chocolate artesanal natural elaborado con cacao amazónico. Tienda online, envíos internacionales y la esencia del chocolate de verdad." />
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+
+<!-- Mobile Sidebar Toggle -->
+<button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menú">
+  <i class="bi bi-list"></i>
+</button>
+
+<!-- Sidebar Overlay (mobile) -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Cart Modal Overlay -->
+<div class="cart-modal-overlay" id="cartOverlay"></div>
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🍫</div>
+      <div class="brand-name">Kakaw<em>-essence</em></div>
+    </div>
+    <div class="sidebar-tagline">Chocolatería Natural · Madrid</div>
+  </div>
+
+  <nav class="sidebar-nav" aria-label="Navegación principal">
+    <div class="nav-section-label">Inicio</div>
+    <a href="#inicio"><span class="nav-icon"><i class="bi bi-house"></i></span> Inicio</a>
+
+    <div class="nav-section-label">Nuestra Marca</div>
+    <a href="#nosotros"><span class="nav-icon"><i class="bi bi-people"></i></span> Sobre Nosotros</a>
+    <a href="#informacion"><span class="nav-icon"><i class="bi bi-info-circle"></i></span> Información</a>
+    <a href="#premios"><span class="nav-icon"><i class="bi bi-trophy"></i></span> Premios</a>
+    <a href="#experiencia"><span class="nav-icon"><i class="bi bi-camera-video"></i></span> Experiencia Live</a>
+
+    <div class="nav-section-label">Tienda</div>
+    <a href="#catalogo"><span class="nav-icon"><i class="bi bi-grid"></i></span> Catálogo</a>
+    <a href="#pago"><span class="nav-icon"><i class="bi bi-shield-check"></i></span> Pago Seguro</a>
+    <button class="nav-cart-btn" onclick="openCart()">
+      <span class="nav-icon"><i class="bi bi-bag"></i></span>
+      Mi Carrito
+      <span class="cart-badge" id="cartCount" style="display:none">0</span>
+    </button>
+
+    <div class="nav-section-label">Contacto</div>
+    <a href="#contacto"><span class="nav-icon"><i class="bi bi-envelope"></i></span> Contacto</a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="sidebar-social">
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+    </div>
+    <p>&copy; 2026 Kakaw-essence S.L.</p>
+  </div>
+</aside>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+
+  <!-- ============================================================
+       HERO / INICIO
+       ============================================================ -->
+  <section id="inicio">
+    <div class="hero-eyebrow"><span>Desde el Amazonas hasta tu mesa</span></div>
+    <h1 class="hero-title">
+      Chocolate puro.<br>
+      <em>La esencia del cacao.</em>
+    </h1>
+    <p class="hero-description">
+      Elaborado artesanalmente con granos de cacao amazónico, con la misma receta familiar que conquistó Madrid y el mundo.
+    </p>
+    <div class="hero-actions">
+      <a href="#catalogo" class="btn-primary">
+        <i class="bi bi-bag"></i> Explorar Tienda
+      </a>
+      <a href="#nosotros" class="btn-outline">
+        <i class="bi bi-play-circle"></i> Nuestra Historia
+      </a>
+    </div>
+
+    <!-- Floating info badges -->
+    <div class="hero-badges">
+      <div class="hero-badge">
+        <span class="badge-icon">🏆</span>
+        <div>
+          <strong>1er Premio Mundial</strong>
+          <span>Mejor Tableta de Chocolate</span>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-icon">🌿</span>
+        <div>
+          <strong>100% Natural</strong>
+          <span>Cacao amazónico certificado</span>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-icon">🌍</span>
+        <div>
+          <strong>Envío Internacional</strong>
+          <span>Entrega en más de 40 países</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE NOSOTROS
+       ============================================================ -->
+  <section id="nosotros" class="section">
+    <div class="section-header fade-in">
+      <p class="label-caps">Nuestra Historia</p>
+      <h2 class="section-title">De un humilde local<br>en Madrid al mundo</h2>
+      <div class="divider-gold"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-img-stack fade-in">
+        <img
+          class="about-img-main"
+          src="https://images.pexels.com/photos/16964902/pexels-photo-16964902.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          alt="Cacao amazónico, granos naturales"
+        />
+        <img
+          class="about-img-accent"
+          src="https://images.pexels.com/photos/33662924/pexels-photo-33662924.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          alt="Nibs de cacao artesanales"
+        />
+        <div class="about-award">
+          <strong>🏆</strong>
+          <span>Premio<br>Mundial</span>
+        </div>
+      </div>
+
+      <div class="about-text fade-in">
+        <h3>Una familia ecuatoriana, una pasión por el chocolate</h3>
+        <p>
+          Todo empezó con una familia ecuatoriana apasionada del chocolate que decidió mudarse a Madrid
+          con un sueño sencillo: compartir el sabor auténtico del cacao amazónico. Su pequeño local,
+          con recetas artesanales y granos importados directamente del Amazonas gracias a un primo productor,
+          conquistó el paladar madrileño desde el primer día.
+        </p>
+        <p>
+          La popularidad creció hasta ganar el <strong>Primer Premio Mundial a la Mejor Tableta de Chocolate</strong>,
+          atrayendo la atención de un inversor apasionado que vio el potencial de llevar esta esencia al mundo,
+          respetando siempre la autenticidad, naturalidad y el proceso artesanal que hace a Kakaw-essence único.
+        </p>
+        <p>
+          Hoy operamos desde una fábrica especializada con maquinaria experimental diseñada para preservar la textura,
+          el sabor y la calidad artesanal, importando cacao amazónico con trazabilidad garantizada y
+          vendiendo nuestros productos en todo el mundo.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <strong>+40</strong>
+            <span>Países de envío</span>
+          </div>
+          <div class="stat-item">
+            <strong>1er</strong>
+            <span>Premio mundial</span>
+          </div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Cacao natural</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INFORMACIÓN / PROCESO
+       ============================================================ -->
+  <section id="informacion" class="section-dark">
+    <div class="section-header fade-in">
+      <p class="label-caps" style="color:var(--gold-light)">Nuestro Proceso</p>
+      <h2 class="section-title light">De la semilla al sabor:<br>nuestra cadena artesanal</h2>
+      <div class="divider-gold"></div>
+      <p class="section-subtitle light">
+        Transparencia total en cada etapa. Desde la recolección del cacao amazónico hasta el empaquetado final,
+        cada paso está diseñado para preservar la esencia natural del chocolate.
+      </p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card fade-in">
+        <div class="process-num">01</div>
+        <div class="process-icon">🌱</div>
+        <h4>Origen Amazónico</h4>
+        <p>Granos de cacao seleccionados directamente de plantaciones familiares del Amazonas ecuatoriano con trazabilidad garantizada.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">02</div>
+        <div class="process-icon">✈️</div>
+        <h4>Importación Sostenible</h4>
+        <p>Transporte refrigerado y documentado que asegura la cadena de frío y el respeto al medioambiente en cada cargamento.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">03</div>
+        <div class="process-icon">⚙️</div>
+        <h4>Tostado Artesanal</h4>
+        <p>Maquinaria experimental de última generación diseñada para replicar el proceso artesanal en volúmenes mayores sin perder sabor.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">04</div>
+        <div class="process-icon">🍫</div>
+        <h4>Elaboración</h4>
+        <p>Nuestros maestros chocolateros supervisan cada lote, siguiendo las recetas originales de la familia y ajustando por textura y aroma.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">05</div>
+        <div class="process-icon">🔬</div>
+        <h4>Control de Calidad</h4>
+        <p>Análisis físico-químico y degustación profesional en cada partida para garantizar el nivel de exigencia Kakaw-essence.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">06</div>
+        <div class="process-icon">📦</div>
+        <h4>Embalaje Ecológico</h4>
+        <p>Packaging sostenible y biodegradable que refleja el compromiso medioambiental y protege el chocolate durante el transporte internacional.</p>
+      </div>
+    </div>
+
+    <!-- Valores -->
+    <div style="margin-top:5rem;">
+      <div class="section-header fade-in" style="margin-bottom:2rem">
+        <p class="label-caps" style="color:var(--gold-light)">Nuestros Valores</p>
+        <h3 class="section-title light" style="font-size:clamp(1.6rem,2.5vw,2.2rem)">Lo que nos define</h3>
+      </div>
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <div class="value-icon">🌿</div>
+          <h4>Naturalidad</h4>
+          <p>Sin aditivos artificiales, sin conservantes. Solo cacao puro, azúcar y pasión. Cada tableta es un producto 100% natural.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">🤝</div>
+          <h4>Comercio Justo</h4>
+          <p>Pagamos precio justo a los productores amazónicos, impulsando la economía local y asegurando sostenibilidad a largo plazo.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">🎨</div>
+          <h4>Artesanía</h4>
+          <p>La tecnología sirve a la artesanía, no al revés. Las recetas familiares guían cada decisión de producción.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">🌍</div>
+          <h4>Sostenibilidad</h4>
+          <p>Compromiso con el planeta: embalaje ecológico, huella de carbono monitoreada y apoyo a la reforestación amazónica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CATÁLOGO / TIENDA
+       ============================================================ -->
+  <section id="catalogo">
+    <div class="section-header fade-in">
+      <p class="label-caps">Nuestra Tienda</p>
+      <h2 class="section-title">Catálogo de Productos</h2>
+      <div class="divider-gold"></div>
+      <p class="section-subtitle">
+        Colecciones artesanales elaboradas con cacao amazónico. Edita las imágenes haciendo clic en el producto.
+      </p>
+    </div>
+
+    <div class="shop-filters fade-in">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="tabletas">Tabletas</button>
+      <button class="filter-btn" data-filter="bombones">Bombones</button>
+      <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+      <button class="filter-btn" data-filter="packs">Packs & Regalos</button>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Producto 1 -->
+      <article class="product-card fade-in" data-category="tabletas">
+        <div class="product-img-wrap">
+          <!-- EDITAR IMAGEN: reemplaza el src con la URL de tu imagen de producto -->
+          <img
+            src="https://images.pexels.com/photos/10303625/pexels-photo-10303625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Tableta Amazónica 85%"
+          />
+          <span class="product-badge best">Bestseller</span>
+          <div class="product-overlay">
+            <button onclick="addToCart('Tableta Amazónica 85%', 8.90, 'https://images.pexels.com/photos/10303625/pexels-photo-10303625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Tabletas')" title="Añadir al carrito">
+              <i class="bi bi-bag-plus"></i>
+            </button>
+            <button title="Ver detalles" onclick="addToCart('Tableta Amazónica 85%', 8.90, 'https://images.pexels.com/photos/10303625/pexels-photo-10303625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Tabletas')">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Tabletas</p>
+          <h3 class="product-name">Tableta Amazónica 85%</h3>
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-count">(128)</span>
+          </div>
+          <p class="product-desc">Intenso cacao amazónico al 85%. Notas afrutadas, textura sedosa y final prolongado.</p>
+          <div class="product-footer">
+            <div class="product-price">8,90€</div>
+            <button class="add-cart-btn" onclick="addToCart('Tableta Amazónica 85%', 8.90, 'https://images.pexels.com/photos/10303625/pexels-photo-10303625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Tabletas')" title="Añadir al carrito">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="product-card fade-in" data-category="bombones">
+        <div class="product-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/15833455/pexels-photo-15833455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Caja Bombones Artesanales"
+          />
+          <span class="product-badge new">Nuevo</span>
+          <div class="product-overlay">
+            <button onclick="addToCart('Caja Bombones Artesanales', 18.50, 'https://images.pexels.com/photos/15833455/pexels-photo-15833455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Bombones')" title="Añadir al carrito">
+              <i class="bi bi-bag-plus"></i>
+            </button>
+            <button title="Ver detalles">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Bombones</p>
+          <h3 class="product-name">Caja Bombones Artesanales</h3>
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-count">(94)</span>
+          </div>
+          <p class="product-desc">12 bombones con rellenos de frutos del bosque, caramelo salado y ganache puro.</p>
+          <div class="product-footer">
+            <div class="product-price">18,50€</div>
+            <button class="add-cart-btn" onclick="addToCart('Caja Bombones Artesanales', 18.50, 'https://images.pexels.com/photos/15833455/pexels-photo-15833455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Bombones')" title="Añadir al carrito">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="product-card fade-in" data-category="bebidas">
+        <div class="product-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/14704654/pexels-photo-14704654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Chocolate Caliente Amazónico"
+          />
+          <div class="product-overlay">
+            <button onclick="addToCart('Chocolate Caliente Amazónico', 12.00, 'https://images.pexels.com/photos/14704654/pexels-photo-14704654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Bebidas')" title="Añadir al carrito">
+              <i class="bi bi-bag-plus"></i>
+            </button>
+            <button title="Ver detalles">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Bebidas</p>
+          <h3 class="product-name">Cacao Soluble Premium</h3>
+          <div class="product-rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-count">(67)</span>
+          </div>
+          <p class="product-desc">Polvo de cacao amazónico sin azúcar añadida. Perfecto para chocolate caliente artesanal en casa.</p>
+          <div class="product-footer">
+            <div class="product-price">12,00€</div>
+            <button class="add-cart-btn" onclick="addToCart('Chocolate Caliente Amazónico', 12.00, 'https://images.pexels.com/photos/14704654/pexels-photo-14704654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Bebidas')" title="Añadir al carrito">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="product-card fade-in" data-category="tabletas">
+        <div class="product-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/8482368/pexels-photo-8482368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Tableta Especias Amazónicas"
+          />
+          <div class="product-overlay">
+            <button onclick="addToCart('Tableta Especias Amazónicas', 9.90, 'https://images.pexels.com/photos/8482368/pexels-photo-8482368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Tabletas')" title="Añadir al carrito">
+              <i class="bi bi-bag-plus"></i>
+            </button>
+            <button title="Ver detalles">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Tabletas</p>
+          <h3 class="product-name">Tableta Especias &amp; Anís</h3>
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-count">(52)</span>
+          </div>
+          <p class="product-desc">Combinación única de cacao 70% con canela, anís estrellado y una pizca de pimienta negra.</p>
+          <div class="product-footer">
+            <div class="product-price">9,90€</div>
+            <button class="add-cart-btn" onclick="addToCart('Tableta Especias Amazónicas', 9.90, 'https://images.pexels.com/photos/8482368/pexels-photo-8482368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Tabletas')" title="Añadir al carrito">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 5 -->
+      <article class="product-card fade-in" data-category="packs">
+        <div class="product-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/31443060/pexels-photo-31443060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Pack Degustación Kakaw-essence"
+          />
+          <span class="product-badge best">Mejor Valor</span>
+          <div class="product-overlay">
+            <button onclick="addToCart('Pack Degustación Kakaw-essence', 34.90, 'https://images.pexels.com/photos/31443060/pexels-photo-31443060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Packs')" title="Añadir al carrito">
+              <i class="bi bi-bag-plus"></i>
+            </button>
+            <button title="Ver detalles">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Packs &amp; Regalos</p>
+          <h3 class="product-name">Pack Degustación Premium</h3>
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-count">(211)</span>
+          </div>
+          <p class="product-desc">5 tabletas + 6 bombones + cacao soluble. El regalo perfecto para los amantes del chocolate.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="old-price">42,00€</span>34,90€
+            </div>
+            <button class="add-cart-btn" onclick="addToCart('Pack Degustación Kakaw-essence', 34.90, 'https://images.pexels.com/photos/31443060/pexels-photo-31443060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Packs')" title="Añadir al carrito">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Producto 6 -->
+      <article class="product-card fade-in" data-category="bombones">
+        <div class="product-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/31325605/pexels-photo-31325605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Trufas de Cacao Negro"
+          />
+          <span class="product-badge new">Temporada</span>
+          <div class="product-overlay">
+            <button onclick="addToCart('Trufas de Cacao Negro', 14.90, 'https://images.pexels.com/photos/31325605/pexels-photo-31325605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Bombones')" title="Añadir al carrito">
+              <i class="bi bi-bag-plus"></i>
+            </button>
+            <button title="Ver detalles">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Bombones</p>
+          <h3 class="product-name">Trufas de Cacao Negro</h3>
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-count">(78)</span>
+          </div>
+          <p class="product-desc">Trufas artesanales con ganache de cacao 90% y cobertura de nibs tostados. Sin gluten.</p>
+          <div class="product-footer">
+            <div class="product-price">14,90€</div>
+            <button class="add-cart-btn" onclick="addToCart('Trufas de Cacao Negro', 14.90, 'https://images.pexels.com/photos/31325605/pexels-photo-31325605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Bombones')" title="Añadir al carrito">
+              <i class="bi bi-plus"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /products-grid -->
+
+    <!-- Call to action ver más -->
+    <div style="text-align:center; margin-top:3.5rem;" class="fade-in">
+      <p style="color:var(--text-muted); font-size:.9rem; margin-bottom:1rem;">¿Buscas algo especial? Contacta con nosotros para pedidos personalizados.</p>
+      <a href="#contacto" class="btn-dark"><i class="bi bi-chat-heart"></i> Pedido Personalizado</a>
+    </div>
+
+  </section><!-- /catalogo -->
+
+  <!-- ============================================================
+       PAGO SEGURO
+       ============================================================ -->
+  <section id="pago">
+    <div class="payment-grid">
+      <div class="payment-text fade-in">
+        <p class="label-caps" style="color:var(--gold-light)">Compra Protegida</p>
+        <h2>Pago 100% seguro.<br>Envío internacional.</h2>
+        <p>
+          Tu seguridad es nuestra prioridad. Todos los pagos se procesan con encriptado SSL de 256 bits.
+          Aceptamos los principales métodos de pago y garantizamos la devolución en 30 días.
+        </p>
+
+        <div class="payment-methods">
+          <div class="pay-method"><span class="pay-icon">💳</span> Visa / Mastercard</div>
+          <div class="pay-method"><span class="pay-icon">🅿️</span> PayPal</div>
+          <div class="pay-method"><span class="pay-icon">🍎</span> Apple Pay</div>
+          <div class="pay-method"><span class="pay-icon">G</span> Google Pay</div>
+          <div class="pay-method"><span class="pay-icon">🏦</span> Transferencia</div>
+          <div class="pay-method"><span class="pay-icon">₿</span> Bizum</div>
+        </div>
+
+        <div class="security-badges">
+          <div class="sec-badge">
+            <div class="sec-icon"><i class="bi bi-shield-lock"></i></div>
+            SSL 256-bit
+          </div>
+          <div class="sec-badge">
+            <div class="sec-icon"><i class="bi bi-patch-check"></i></div>
+            Compra verificada
+          </div>
+          <div class="sec-badge">
+            <div class="sec-icon"><i class="bi bi-arrow-counterclockwise"></i></div>
+            30 días devolución
+          </div>
+          <div class="sec-badge">
+            <div class="sec-icon"><i class="bi bi-headset"></i></div>
+            Soporte 24/7
+          </div>
+        </div>
+      </div>
+
+      <div class="shipping-box fade-in">
+        <h3><i class="bi bi-truck"></i> Opciones de Envío</h3>
+        <div class="shipping-options">
+          <div class="ship-option">
+            <span class="ship-icon"><i class="bi bi-lightning"></i></span>
+            <div>
+              <strong>Envío Express</strong>
+              <span>24-48 horas · España peninsular</span>
+            </div>
+            <span class="ship-price">4,95€</span>
+          </div>
+          <div class="ship-option">
+            <span class="ship-icon"><i class="bi bi-box-seam"></i></span>
+            <div>
+              <strong>Envío Estándar</strong>
+              <span>3-5 días laborables · España + Portugal</span>
+            </div>
+            <span class="ship-price">2,95€</span>
+          </div>
+          <div class="ship-option">
+            <span class="ship-icon"><i class="bi bi-globe2"></i></span>
+            <div>
+              <strong>Envío Internacional</strong>
+              <span>7-14 días · Europa y América</span>
+            </div>
+            <span class="ship-price">9,95€</span>
+          </div>
+          <div class="ship-option">
+            <span class="ship-icon"><i class="bi bi-star"></i></span>
+            <div>
+              <strong>Envío Gratuito</strong>
+              <span>En pedidos superiores a 50€</span>
+            </div>
+            <span class="ship-price" style="color:var(--forest)">Gratis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCIA LIVE / STREAMS
+       ============================================================ -->
+  <section id="experiencia">
+    <div class="section-header fade-in">
+      <p class="label-caps" style="color:var(--gold-light)">Transparencia Total</p>
+      <h2 class="section-title light">Vive el proceso<br>en directo</h2>
+      <div class="divider-gold"></div>
+    </div>
+
+    <div class="experience-grid">
+      <div class="exp-visual fade-in">
+        <img
+          src="https://images.pexels.com/photos/33662925/pexels-photo-33662925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          alt="Proceso de producción de cacao Kakaw-essence"
+        />
+        <div class="exp-overlay"></div>
+        <button class="play-btn" onclick="window.open('#','_blank')" title="Ver stream">&#9654;</button>
+        <div style="position:absolute; bottom:1.5rem; left:1.5rem; z-index:2;">
+          <span class="live-tag">EN VIVO</span>
+        </div>
+      </div>
+
+      <div class="exp-text fade-in">
+        <p class="label-caps" style="color:var(--gold-light)">Streams &amp; Contenido</p>
+        <h2>Síguenos en directo:<br>del grano al chocolate</h2>
+        <p>
+          Creemos en la transparencia total. Por eso transmitimos en directo el proceso de producción,
+          desde la selección de granos hasta el moldeado final. Apoya, aprende y saborea desde donde estés.
+        </p>
+
+        <div class="stream-features">
+          <div class="stream-feat">
+            <div class="feat-icon"><i class="bi bi-camera-video"></i></div>
+            <div>
+              <strong>Streams en directo semanales</strong>
+              <span>Proceso de producción artesanal en tiempo real</span>
+            </div>
+          </div>
+          <div class="stream-feat">
+            <div class="feat-icon"><i class="bi bi-people"></i></div>
+            <div>
+              <strong>Comunidad de amantes del cacao</strong>
+              <span>Más de 50.000 seguidores en redes sociales</span>
+            </div>
+          </div>
+          <div class="stream-feat">
+            <div class="feat-icon"><i class="bi bi-heart"></i></div>
+            <div>
+              <strong>Donaciones y membresías</strong>
+              <span>Apoya la artesanía y recibe recompensas exclusivas</span>
+            </div>
+          </div>
+          <div class="stream-feat">
+            <div class="feat-icon"><i class="bi bi-award"></i></div>
+            <div>
+              <strong>Colaboraciones con influencers</strong>
+              <span>Gastrónomos y chocolateros internacionales</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="#" class="btn-primary"><i class="bi bi-youtube"></i> Ver Canal</a>
+          <a href="#" class="btn-outline" style="border-color:rgba(250,243,232,0.4)"><i class="bi bi-tiktok"></i> TikTok Live</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PREMIOS & RECONOCIMIENTOS
+       ============================================================ -->
+  <section id="premios">
+    <div class="section-header fade-in">
+      <p class="label-caps">Reconocimientos</p>
+      <h2 class="section-title">Premios &amp; Reconocimientos</h2>
+      <div class="divider-gold"></div>
+      <p class="section-subtitle">
+        La calidad de nuestro chocolate ha sido reconocida por los principales organismos mundiales del sector.
+      </p>
+    </div>
+
+    <!-- Marquee de galardones -->
+    <div class="awards-marquee-wrap fade-in">
+      <div class="awards-marquee">
+        <span class="marquee-award"><span class="aw-icon">🏆</span> World Chocolate Masters 2022</span>
+        <span class="marquee-award"><span class="aw-icon">🥇</span> Mejor Tableta del Mundo · ICA</span>
+        <span class="marquee-award"><span class="aw-icon">⭐</span> 5 Estrellas Superior Taste Award</span>
+        <span class="marquee-award"><span class="aw-icon">🌿</span> Certificado Comercio Justo</span>
+        <span class="marquee-award"><span class="aw-icon">🎖️</span> Mejor Chocolatería Artesanal España 2023</span>
+        <span class="marquee-award"><span class="aw-icon">🌍</span> International Cocoa Award</span>
+        <span class="marquee-award"><span class="aw-icon">🍫</span> Fine Chocolate Industry Association</span>
+        <!-- Duplicado para efecto continuo -->
+        <span class="marquee-award"><span class="aw-icon">🏆</span> World Chocolate Masters 2022</span>
+        <span class="marquee-award"><span class="aw-icon">🥇</span> Mejor Tableta del Mundo · ICA</span>
+        <span class="marquee-award"><span class="aw-icon">⭐</span> 5 Estrellas Superior Taste Award</span>
+        <span class="marquee-award"><span class="aw-icon">🌿</span> Certificado Comercio Justo</span>
+        <span class="marquee-award"><span class="aw-icon">🎖️</span> Mejor Chocolatería Artesanal España 2023</span>
+        <span class="marquee-award"><span class="aw-icon">🌍</span> International Cocoa Award</span>
+        <span class="marquee-award"><span class="aw-icon">🍫</span> Fine Chocolate Industry Association</span>
+      </div>
+    </div>
+
+    <div class="awards-grid">
+      <div class="award-card fade-in">
+        <div class="trophy">🏆</div>
+        <h4>Mejor Tableta del Mundo</h4>
+        <p>International Chocolate Awards. Primer puesto en la categoría de chocolate negro artesanal de origen único.</p>
+        <span class="award-year">ICA · 2022</span>
+      </div>
+      <div class="award-card fade-in">
+        <div class="trophy">🥇</div>
+        <h4>Superior Taste Award</h4>
+        <p>Reconocimiento del International Taste Institute de Bruselas con 5 estrellas por calidad organoléptica excepcional.</p>
+        <span class="award-year">iTi · 2023</span>
+      </div>
+      <div class="award-card fade-in">
+        <div class="trophy">🌿</div>
+        <h4>Mejor Marca Sostenible</h4>
+        <p>Premio nacional a la chocolatería artesanal con mayor compromiso medioambiental y cadena de suministro ética.</p>
+        <span class="award-year">AICE · 2023</span>
+      </div>
+      <div class="award-card fade-in">
+        <div class="trophy">🎖️</div>
+        <h4>World Chocolate Masters</h4>
+        <p>Participación y reconocimiento especial del jurado internacional por innovación en chocolate artesanal a escala.</p>
+        <span class="award-year">WCM · 2024</span>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="fade-in" style="margin-top:4rem; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:3rem; text-align:center; box-shadow:var(--shadow-card);">
+      <p class="label-caps" style="text-align:center; margin-bottom:.75rem">Newsletter</p>
+      <h3 style="font-size:1.6rem; color:var(--cacao); margin-bottom:.75rem">Recibe novedades y descuentos exclusivos</h3>
+      <p style="color:var(--text-muted); font-size:.88rem; margin-bottom:1.75rem; max-width:480px; margin-left:auto; margin-right:auto;">
+        Suscribete para recibir lanzamientos, recetas con chocolate artesanal y ofertas solo para suscriptores.
+      </p>
+      <form id="newsletterForm" style="display:flex; gap:.75rem; max-width:440px; margin:0 auto; flex-wrap:wrap;">
+        <input
+          type="email"
+          placeholder="tu@email.com"
+          required
+          style="flex:1; min-width:200px; padding:.85rem 1rem; border:1.5px solid var(--cream-dark); border-radius:var(--radius-sm); font-family:inherit; font-size:.88rem; outline:none; background:var(--cream);"
+        />
+        <button type="submit" class="btn-primary" style="white-space:nowrap;">Suscribirse</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+       ============================================================ -->
+  <section id="contacto">
+    <div class="section-header fade-in">
+      <p class="label-caps">Contacto</p>
+      <h2 class="section-title">Hablemos de chocolate</h2>
+      <div class="divider-gold"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <h3>Estamos aquí para ti</h3>
+        <p>
+          Ya sea para pedidos personalizados, colaboraciones, consultas de distribucion o simplemente para hablar
+          del mundo del chocolate artesanal, nuestro equipo te responde en menos de 24 horas.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <strong>Fábrica &amp; Tienda</strong>
+              <span>Calle del Cacao 14, Madrid 28001, España</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>info.kakaw.essence@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+34 91 234 56 78</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <strong>Horario</strong>
+              <span>Lun–Vie 9:00–18:00 · Sáb 10:00–14:00</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="bi bi-globe2"></i></div>
+            <div>
+              <strong>Distribución Internacional</strong>
+              <span>distribucion.kakaw.essence@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form fade-in">
+        <h3>Envíanos un mensaje</h3>
+        <p>Te responderemos en menos de 24 horas.</p>
+
+        <form id="contactForm" action="send-mail.php" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <select id="asunto">
+              <option value="">Selecciona un asunto...</option>
+              <option>Pedido personalizado</option>
+              <option>Distribución internacional</option>
+              <option>Colaboracion con influencers</option>
+              <option>Patrocinio</option>
+              <option>Prensa y medios</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+            <i class="bi bi-send"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="sidebar-logo" style="margin-bottom:0">
+          <div class="logo-icon" style="width:38px;height:38px;font-size:1.1rem;">🍫</div>
+          <div class="brand-name" style="font-size:1.15rem">Kakaw<em>-essence</em></div>
+        </div>
+        <p>
+          Chocolatería artesanal natural elaborada con cacao amazónico desde el corazon de Madrid para el mundo.
+          La esencia del chocolate de verdad.
+        </p>
+        <div class="sidebar-social" style="margin-top:1.25rem; margin-bottom:0">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegacion</h5>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#informacion">Proceso Artesanal</a></li>
+          <li><a href="#experiencia">Experiencia Live</a></li>
+          <li><a href="#premios">Premios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Tienda</h5>
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#catalogo">Tabletas</a></li>
+          <li><a href="#catalogo">Bombones</a></li>
+          <li><a href="#catalogo">Packs Regalo</a></li>
+          <li><a href="#pago">Pago Seguro</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Legal &amp; Ayuda</h5>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+          <li><a href="#">Devoluciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kakaw-essence S.L. — Todos los derechos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <a href="#">Legal</a>
+      </div>
+    </div>
+  </footer>
+
+</main><!-- /main-content -->
+
+<!-- ===== CARRITO MODAL ===== -->
+<div class="cart-modal" id="cartModal" role="dialog" aria-label="Carrito de compra">
+  <div class="cart-header">
+    <h3><i class="bi bi-bag"></i> Tu Carrito</h3>
+    <button class="cart-close" onclick="closeCart()" aria-label="Cerrar carrito">
+      <i class="bi bi-x-lg"></i>
+    </button>
+  </div>
+
+  <div class="cart-items" id="cartItemsList">
+    <div class="cart-empty">
+      <div class="empty-icon">🍫</div>
+      <p>Tu carrito está vacío</p>
+      <a href="#catalogo" class="btn-dark" onclick="closeCart()" style="margin-top:.5rem">Ver Catálogo</a>
+    </div>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-subtotal" id="cartSubtotal">
+      <span>Subtotal</span>
+      <span>0,00€</span>
+    </div>
+    <div class="cart-total" id="cartTotal">
+      <span>Total</span>
+      <span>0,00€</span>
+    </div>
+    <button class="checkout-btn" onclick="alert('Redirigiendo al proceso de pago seguro...')">
+      <i class="bi bi-lock"></i> Pagar de forma segura
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
